@@ -1,0 +1,318 @@
+[
+  {
+    "id": "2.0.0.0",
+    "name": "STP Group",
+    "category": "STP",
+    "description": "Summary for STP tests",
+    "expected": "",
+    "created": "2024-06-14",
+    "modified": "2025-06-14",
+    "authors": [
+      "Ernest Cooper"
+    ],
+    "runtime": "0.00s",
+    "lastFail": "2025-06-14",
+    "failCount": 0,
+    "runCount": 0,
+    "last_run": {
+      "result": "",
+      "date": "2025-06-14 8:06am"
+    }
+  },
+  {
+    "id": "3.0.0.0",
+    "name": "VLANs Group",
+    "category": "VLANs",
+    "description": "Summary for VLANs tests",
+    "expected": "",
+    "created": "2024-06-14",
+    "modified": "2025-06-14",
+    "authors": [
+      "Ernest Cooper"
+    ],
+    "runtime": "0.00s",
+    "lastFail": "2025-06-14",
+    "failCount": 0,
+    "runCount": 0,
+    "last_run": {
+      "result": "",
+      "date": "2025-06-14 8:06am"
+    }
+  },
+  {
+    "id": "4.0.0.0",
+    "name": "IP Group",
+    "category": "IP",
+    "description": "Summary for IP tests",
+    "expected": "",
+    "created": "2024-06-14",
+    "modified": "2025-06-14",
+    "authors": [
+      "Ernest Cooper"
+    ],
+    "runtime": "0.00s",
+    "lastFail": "2025-06-14",
+    "failCount": 0,
+    "runCount": 0,
+    "last_run": {
+      "result": "",
+      "date": "2025-06-14 8:06am"
+    }
+  },
+  {
+    "id": "6.0.0.0",
+    "name": "OSPF Group",
+    "category": "OSPF",
+    "description": "Summary for OSPF tests",
+    "expected": "",
+    "created": "2024-06-14",
+    "modified": "2025-06-14",
+    "authors": [
+      "Ernest Cooper"
+    ],
+    "runtime": "0.00s",
+    "lastFail": "2025-06-14",
+    "failCount": 0,
+    "runCount": 0,
+    "last_run": {
+      "result": "",
+      "date": "2025-06-14 8:06am"
+    }
+  },
+  {
+    "id": "8.0.0.0",
+    "name": "BGP Group",
+    "category": "BGP",
+    "description": "Summary for BGP tests",
+    "expected": "",
+    "created": "2024-06-14",
+    "modified": "2025-06-14",
+    "authors": [
+      "Ernest Cooper"
+    ],
+    "runtime": "0.00s",
+    "lastFail": "2025-06-14",
+    "failCount": 0,
+    "runCount": 0,
+    "last_run": {
+      "result": "",
+      "date": "2025-06-14 8:06am"
+    }
+  },
+  {
+    "id": "2.0.0.1",
+    "name": "rootElection",
+    "category": "STP",
+    "description": "Root bridge election test",
+    "created": "2025-06-14",
+    "modified": "2025-06-14",
+    "authors": [
+      "Ernest Cooper"
+    ],
+    "runtime": "0.75s",
+    "lastFail": "2025-06-01",
+    "failCount": 0,
+    "runCount": 3,
+    "last_run": {
+      "result": "pass",
+      "date": "2025-06-14 8:06am"
+    },
+    "code": "stp/root_election.py",
+    "steps": [
+      "Step 1: Connect three switches in a triangle topology",
+      "Step 2: Set bridge priority on one switch lower than others",
+      "Step 3: Reboot all switches",
+      "Step 4: Run STP and check which switch becomes root bridge",
+      "Step 5: Confirm STP topology using 'show spanning-tree'"
+    ]
+  },
+  {
+    "id": "2.0.0.2",
+    "name": "blockingPort",
+    "category": "STP",
+    "description": "Redundant link blocking test",
+    "created": "2025-06-14",
+    "modified": "2025-06-14",
+    "authors": [
+      "Ernest Cooper"
+    ],
+    "runtime": "0.88s",
+    "lastFail": "2025-06-02",
+    "failCount": 1,
+    "runCount": 4,
+    "last_run": {
+      "result": "pass",
+      "date": "2025-06-14 8:06am"
+    },
+    "code": "stp/blocking_port.py",
+    "steps": [
+      "Step 1: Create a looped topology with two switches and two links",
+      "Step 2: Enable STP on both devices",
+      "Step 3: Observe interface states using 'show spanning-tree interface'",
+      "Step 4: Verify one of the redundant links is in blocking state",
+      "Step 5: Remove one link and confirm port transitions to forwarding"
+    ]
+  },
+  {
+    "id": "2.0.0.3",
+    "name": "bpduGuard",
+    "category": "STP",
+    "description": "BPDU guard port shutdown test",
+    "created": "2025-06-14",
+    "modified": "2025-06-14",
+    "authors": [
+      "Ernest Cooper"
+    ],
+    "runtime": "1.02s",
+    "lastFail": "2025-06-07",
+    "failCount": 2,
+    "runCount": 5,
+    "last_run": {
+      "result": "fail",
+      "date": "2025-06-14 8:06am"
+    },
+    "code": "stp/bpdu_guard.py",
+    "steps": [
+      "Step 1: Enable BPDU guard on an edge port",
+      "Step 2: Connect another switch that sends BPDUs",
+      "Step 3: Observe the port shut down automatically",
+      "Step 4: Use 'show errdisable recovery' to confirm state",
+      "Step 5: Manually re-enable port and clear error"
+    ]
+  },
+  {
+    "id": "2.0.0.4",
+    "name": "rapidConverge",
+    "category": "STP",
+    "description": "Rapid STP failover test",
+    "created": "2025-06-14",
+    "modified": "2025-06-14",
+    "authors": [
+      "Ernest Cooper"
+    ],
+    "runtime": "0.93s",
+    "lastFail": "2025-06-12",
+    "failCount": 1,
+    "runCount": 3,
+    "last_run": {
+      "result": "pass",
+      "date": "2025-06-14 8:06am"
+    },
+    "code": "stp/rapid_converge.py",
+    "steps": [
+      "Step 1: Enable Rapid-PVST+ on all switches",
+      "Step 2: Disconnect one active uplink to simulate failure",
+      "Step 3: Start timer immediately",
+      "Step 4: Monitor alternate port transitioning to forwarding",
+      "Step 5: Record total convergence time"
+    ]
+  },
+  {
+    "id": "3.0.0.1",
+    "name": "vlanIsolation",
+    "category": "VLANs",
+    "description": "Verify VLAN traffic isolation between ports",
+    "created": "2025-06-14",
+    "modified": "2025-06-14",
+    "authors": [
+      "Ernest Cooper"
+    ],
+    "runtime": "0.66s",
+    "lastFail": "2025-06-10",
+    "failCount": 0,
+    "runCount": 2,
+    "last_run": {
+      "result": "pass",
+      "date": "2025-06-14 8:06am"
+    },
+    "code": "vlans/isolation.py",
+    "steps": [
+      "Step 1: Configure two ports on different VLANs",
+      "Step 2: Attempt ping between them",
+      "Step 3: Confirm traffic is blocked",
+      "Step 4: Move both ports to same VLAN and re-test",
+      "Step 5: Confirm traffic is now allowed"
+    ]
+  },
+  {
+    "id": "4.0.0.1",
+    "name": "ipPingTest",
+    "category": "IP",
+    "description": "Basic ping test for IPv4 connectivity",
+    "created": "2025-06-14",
+    "modified": "2025-06-14",
+    "authors": [
+      "Ernest Cooper"
+    ],
+    "runtime": "0.50s",
+    "lastFail": "2025-06-11",
+    "failCount": 1,
+    "runCount": 3,
+    "last_run": {
+      "result": "pass",
+      "date": "2025-06-14 8:06am"
+    },
+    "code": "ip/ping_test.py",
+    "steps": [
+      "Step 1: Assign IP addresses to interfaces",
+      "Step 2: Bring interfaces up",
+      "Step 3: Send ping from one device to the other",
+      "Step 4: Verify reply is received",
+      "Step 5: Record packet loss and latency"
+    ]
+  },
+  {
+    "id": "6.0.0.1",
+    "name": "ospfNeighbor",
+    "category": "OSPF",
+    "description": "Verify OSPF neighbor adjacency forms",
+    "created": "2025-06-14",
+    "modified": "2025-06-14",
+    "authors": [
+      "Ernest Cooper"
+    ],
+    "runtime": "0.89s",
+    "lastFail": "2025-06-12",
+    "failCount": 0,
+    "runCount": 5,
+    "last_run": {
+      "result": "pass",
+      "date": "2025-06-14 8:06am"
+    },
+    "code": "ospf/neighbor_check.py",
+    "steps": [
+      "Step 1: Configure OSPF on both routers",
+      "Step 2: Ensure interfaces are on same subnet",
+      "Step 3: Wait for neighbor state to reach FULL",
+      "Step 4: Use 'show ip ospf neighbor' to confirm",
+      "Step 5: Log state transitions if any failure"
+    ]
+  },
+  {
+    "id": "8.0.0.1",
+    "name": "bgpSession",
+    "category": "BGP",
+    "description": "Verify BGP session establishment",
+    "created": "2025-06-14",
+    "modified": "2025-06-14",
+    "authors": [
+      "Ernest Cooper"
+    ],
+    "runtime": "1.12s",
+    "lastFail": "2025-06-08",
+    "failCount": 2,
+    "runCount": 4,
+    "last_run": {
+      "result": "pass",
+      "date": "2025-06-14 8:06am"
+    },
+    "code": "bgp/session_establish.py",
+    "steps": [
+      "Step 1: Configure local and remote AS numbers",
+      "Step 2: Set peer IP address",
+      "Step 3: Bring interface up",
+      "Step 4: Verify BGP session with 'show ip bgp summary'",
+      "Step 5: Confirm state is 'Established'"
+    ]
+  }
+]

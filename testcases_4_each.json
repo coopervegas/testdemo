@@ -1,0 +1,642 @@
+[
+  {
+    "id": "2.0.0.0",
+    "name": "STP Group",
+    "category": "STP",
+    "description": "Summary for STP tests",
+    "expected": "",
+    "created": "2024-06-14",
+    "modified": "2025-06-14",
+    "authors": [
+      "Ernest Cooper"
+    ],
+    "runtime": "0.00s",
+    "lastFail": "2025-06-14",
+    "failCount": 0,
+    "runCount": 0,
+    "last_run": {
+      "result": "",
+      "date": "2025-06-14 8:06am"
+    }
+  },
+  {
+    "id": "3.0.0.0",
+    "name": "VLANs Group",
+    "category": "VLANs",
+    "description": "Summary for VLANs tests",
+    "expected": "",
+    "created": "2024-06-14",
+    "modified": "2025-06-14",
+    "authors": [
+      "Ernest Cooper"
+    ],
+    "runtime": "0.00s",
+    "lastFail": "2025-06-14",
+    "failCount": 0,
+    "runCount": 0,
+    "last_run": {
+      "result": "",
+      "date": "2025-06-14 8:06am"
+    }
+  },
+  {
+    "id": "4.0.0.0",
+    "name": "IP Group",
+    "category": "IP",
+    "description": "Summary for IP tests",
+    "expected": "",
+    "created": "2024-06-14",
+    "modified": "2025-06-14",
+    "authors": [
+      "Ernest Cooper"
+    ],
+    "runtime": "0.00s",
+    "lastFail": "2025-06-14",
+    "failCount": 0,
+    "runCount": 0,
+    "last_run": {
+      "result": "",
+      "date": "2025-06-14 8:06am"
+    }
+  },
+  {
+    "id": "6.0.0.0",
+    "name": "OSPF Group",
+    "category": "OSPF",
+    "description": "Summary for OSPF tests",
+    "expected": "",
+    "created": "2024-06-14",
+    "modified": "2025-06-14",
+    "authors": [
+      "Ernest Cooper"
+    ],
+    "runtime": "0.00s",
+    "lastFail": "2025-06-14",
+    "failCount": 0,
+    "runCount": 0,
+    "last_run": {
+      "result": "",
+      "date": "2025-06-14 8:06am"
+    }
+  },
+  {
+    "id": "8.0.0.0",
+    "name": "BGP Group",
+    "category": "BGP",
+    "description": "Summary for BGP tests",
+    "expected": "",
+    "created": "2024-06-14",
+    "modified": "2025-06-14",
+    "authors": [
+      "Ernest Cooper"
+    ],
+    "runtime": "0.00s",
+    "lastFail": "2025-06-14",
+    "failCount": 0,
+    "runCount": 0,
+    "last_run": {
+      "result": "",
+      "date": "2025-06-14 8:06am"
+    }
+  },
+  {
+    "id": "2.0.0.1",
+    "name": "rootElection",
+    "category": "STP",
+    "description": "Root bridge election test",
+    "created": "2025-06-14",
+    "modified": "2025-06-14",
+    "authors": [
+      "Ernest Cooper"
+    ],
+    "runtime": "1.00s",
+    "lastFail": "2025-06-14",
+    "failCount": 0,
+    "runCount": 1,
+    "last_run": {
+      "result": "pass",
+      "date": "2025-06-14 8:06am"
+    },
+    "code": "stp/root_election.py",
+    "steps": [
+      "Step 1: Setup environment",
+      "Step 2: Execute core configuration",
+      "Step 3: Run test traffic",
+      "Step 4: Collect and verify output",
+      "Step 5: Log results"
+    ]
+  },
+  {
+    "id": "2.0.0.2",
+    "name": "blockingPort",
+    "category": "STP",
+    "description": "Redundant link blocking test",
+    "created": "2025-06-14",
+    "modified": "2025-06-14",
+    "authors": [
+      "Ernest Cooper"
+    ],
+    "runtime": "1.00s",
+    "lastFail": "2025-06-14",
+    "failCount": 0,
+    "runCount": 1,
+    "last_run": {
+      "result": "pass",
+      "date": "2025-06-14 8:06am"
+    },
+    "code": "stp/blocking_port.py",
+    "steps": [
+      "Step 1: Setup environment",
+      "Step 2: Execute core configuration",
+      "Step 3: Run test traffic",
+      "Step 4: Collect and verify output",
+      "Step 5: Log results"
+    ]
+  },
+  {
+    "id": "2.0.0.3",
+    "name": "bpduGuard",
+    "category": "STP",
+    "description": "BPDU guard port shutdown test",
+    "created": "2025-06-14",
+    "modified": "2025-06-14",
+    "authors": [
+      "Ernest Cooper"
+    ],
+    "runtime": "1.00s",
+    "lastFail": "2025-06-14",
+    "failCount": 0,
+    "runCount": 1,
+    "last_run": {
+      "result": "pass",
+      "date": "2025-06-14 8:06am"
+    },
+    "code": "stp/bpdu_guard.py",
+    "steps": [
+      "Step 1: Setup environment",
+      "Step 2: Execute core configuration",
+      "Step 3: Run test traffic",
+      "Step 4: Collect and verify output",
+      "Step 5: Log results"
+    ]
+  },
+  {
+    "id": "2.0.0.4",
+    "name": "rapidConverge",
+    "category": "STP",
+    "description": "Rapid STP failover test",
+    "created": "2025-06-14",
+    "modified": "2025-06-14",
+    "authors": [
+      "Ernest Cooper"
+    ],
+    "runtime": "1.00s",
+    "lastFail": "2025-06-14",
+    "failCount": 0,
+    "runCount": 1,
+    "last_run": {
+      "result": "pass",
+      "date": "2025-06-14 8:06am"
+    },
+    "code": "stp/rapid_converge.py",
+    "steps": [
+      "Step 1: Setup environment",
+      "Step 2: Execute core configuration",
+      "Step 3: Run test traffic",
+      "Step 4: Collect and verify output",
+      "Step 5: Log results"
+    ]
+  },
+  {
+    "id": "3.0.0.1",
+    "name": "vlanIsolation",
+    "category": "VLANs",
+    "description": "Verify VLAN traffic isolation between ports",
+    "created": "2025-06-14",
+    "modified": "2025-06-14",
+    "authors": [
+      "Ernest Cooper"
+    ],
+    "runtime": "1.00s",
+    "lastFail": "2025-06-14",
+    "failCount": 0,
+    "runCount": 1,
+    "last_run": {
+      "result": "pass",
+      "date": "2025-06-14 8:06am"
+    },
+    "code": "vlans/isolation.py",
+    "steps": [
+      "Step 1: Setup environment",
+      "Step 2: Execute core configuration",
+      "Step 3: Run test traffic",
+      "Step 4: Collect and verify output",
+      "Step 5: Log results"
+    ]
+  },
+  {
+    "id": "3.0.0.2",
+    "name": "vlanTrunking",
+    "category": "VLANs",
+    "description": "Trunk port tagging behavior test",
+    "created": "2025-06-14",
+    "modified": "2025-06-14",
+    "authors": [
+      "Ernest Cooper"
+    ],
+    "runtime": "1.00s",
+    "lastFail": "2025-06-14",
+    "failCount": 0,
+    "runCount": 1,
+    "last_run": {
+      "result": "pass",
+      "date": "2025-06-14 8:06am"
+    },
+    "code": "vlans/trunking.py",
+    "steps": [
+      "Step 1: Setup environment",
+      "Step 2: Execute core configuration",
+      "Step 3: Run test traffic",
+      "Step 4: Collect and verify output",
+      "Step 5: Log results"
+    ]
+  },
+  {
+    "id": "3.0.0.3",
+    "name": "vlanMismatch",
+    "category": "VLANs",
+    "description": "VLAN mismatch detection test",
+    "created": "2025-06-14",
+    "modified": "2025-06-14",
+    "authors": [
+      "Ernest Cooper"
+    ],
+    "runtime": "1.00s",
+    "lastFail": "2025-06-14",
+    "failCount": 0,
+    "runCount": 1,
+    "last_run": {
+      "result": "pass",
+      "date": "2025-06-14 8:06am"
+    },
+    "code": "vlans/mismatch.py",
+    "steps": [
+      "Step 1: Setup environment",
+      "Step 2: Execute core configuration",
+      "Step 3: Run test traffic",
+      "Step 4: Collect and verify output",
+      "Step 5: Log results"
+    ]
+  },
+  {
+    "id": "3.0.0.4",
+    "name": "vlanBroadcast",
+    "category": "VLANs",
+    "description": "Broadcast domain containment test",
+    "created": "2025-06-14",
+    "modified": "2025-06-14",
+    "authors": [
+      "Ernest Cooper"
+    ],
+    "runtime": "1.00s",
+    "lastFail": "2025-06-14",
+    "failCount": 0,
+    "runCount": 1,
+    "last_run": {
+      "result": "pass",
+      "date": "2025-06-14 8:06am"
+    },
+    "code": "vlans/broadcast.py",
+    "steps": [
+      "Step 1: Setup environment",
+      "Step 2: Execute core configuration",
+      "Step 3: Run test traffic",
+      "Step 4: Collect and verify output",
+      "Step 5: Log results"
+    ]
+  },
+  {
+    "id": "4.0.0.1",
+    "name": "ipPingTest",
+    "category": "IP",
+    "description": "Basic ping test for IPv4 connectivity",
+    "created": "2025-06-14",
+    "modified": "2025-06-14",
+    "authors": [
+      "Ernest Cooper"
+    ],
+    "runtime": "1.00s",
+    "lastFail": "2025-06-14",
+    "failCount": 0,
+    "runCount": 1,
+    "last_run": {
+      "result": "pass",
+      "date": "2025-06-14 8:06am"
+    },
+    "code": "ip/ping_test.py",
+    "steps": [
+      "Step 1: Setup environment",
+      "Step 2: Execute core configuration",
+      "Step 3: Run test traffic",
+      "Step 4: Collect and verify output",
+      "Step 5: Log results"
+    ]
+  },
+  {
+    "id": "4.0.0.2",
+    "name": "ipSubnetTest",
+    "category": "IP",
+    "description": "Verify subnetting and routing behavior",
+    "created": "2025-06-14",
+    "modified": "2025-06-14",
+    "authors": [
+      "Ernest Cooper"
+    ],
+    "runtime": "1.00s",
+    "lastFail": "2025-06-14",
+    "failCount": 0,
+    "runCount": 1,
+    "last_run": {
+      "result": "pass",
+      "date": "2025-06-14 8:06am"
+    },
+    "code": "ip/subnet.py",
+    "steps": [
+      "Step 1: Setup environment",
+      "Step 2: Execute core configuration",
+      "Step 3: Run test traffic",
+      "Step 4: Collect and verify output",
+      "Step 5: Log results"
+    ]
+  },
+  {
+    "id": "4.0.0.3",
+    "name": "ipGatewayTest",
+    "category": "IP",
+    "description": "Default gateway connectivity test",
+    "created": "2025-06-14",
+    "modified": "2025-06-14",
+    "authors": [
+      "Ernest Cooper"
+    ],
+    "runtime": "1.00s",
+    "lastFail": "2025-06-14",
+    "failCount": 0,
+    "runCount": 1,
+    "last_run": {
+      "result": "pass",
+      "date": "2025-06-14 8:06am"
+    },
+    "code": "ip/gateway.py",
+    "steps": [
+      "Step 1: Setup environment",
+      "Step 2: Execute core configuration",
+      "Step 3: Run test traffic",
+      "Step 4: Collect and verify output",
+      "Step 5: Log results"
+    ]
+  },
+  {
+    "id": "4.0.0.4",
+    "name": "ipDhcpTest",
+    "category": "IP",
+    "description": "DHCP assignment verification",
+    "created": "2025-06-14",
+    "modified": "2025-06-14",
+    "authors": [
+      "Ernest Cooper"
+    ],
+    "runtime": "1.00s",
+    "lastFail": "2025-06-14",
+    "failCount": 0,
+    "runCount": 1,
+    "last_run": {
+      "result": "pass",
+      "date": "2025-06-14 8:06am"
+    },
+    "code": "ip/dhcp.py",
+    "steps": [
+      "Step 1: Setup environment",
+      "Step 2: Execute core configuration",
+      "Step 3: Run test traffic",
+      "Step 4: Collect and verify output",
+      "Step 5: Log results"
+    ]
+  },
+  {
+    "id": "6.0.0.1",
+    "name": "ospfNeighbor",
+    "category": "OSPF",
+    "description": "Verify OSPF neighbor adjacency forms",
+    "created": "2025-06-14",
+    "modified": "2025-06-14",
+    "authors": [
+      "Ernest Cooper"
+    ],
+    "runtime": "1.00s",
+    "lastFail": "2025-06-14",
+    "failCount": 0,
+    "runCount": 1,
+    "last_run": {
+      "result": "pass",
+      "date": "2025-06-14 8:06am"
+    },
+    "code": "ospf/neighbor_check.py",
+    "steps": [
+      "Step 1: Setup environment",
+      "Step 2: Execute core configuration",
+      "Step 3: Run test traffic",
+      "Step 4: Collect and verify output",
+      "Step 5: Log results"
+    ]
+  },
+  {
+    "id": "6.0.0.2",
+    "name": "ospfAreaTest",
+    "category": "OSPF",
+    "description": "Test OSPF area segmentation",
+    "created": "2025-06-14",
+    "modified": "2025-06-14",
+    "authors": [
+      "Ernest Cooper"
+    ],
+    "runtime": "1.00s",
+    "lastFail": "2025-06-14",
+    "failCount": 0,
+    "runCount": 1,
+    "last_run": {
+      "result": "pass",
+      "date": "2025-06-14 8:06am"
+    },
+    "code": "ospf/area_test.py",
+    "steps": [
+      "Step 1: Setup environment",
+      "Step 2: Execute core configuration",
+      "Step 3: Run test traffic",
+      "Step 4: Collect and verify output",
+      "Step 5: Log results"
+    ]
+  },
+  {
+    "id": "6.0.0.3",
+    "name": "ospfDeadTimer",
+    "category": "OSPF",
+    "description": "Check neighbor timeout behavior",
+    "created": "2025-06-14",
+    "modified": "2025-06-14",
+    "authors": [
+      "Ernest Cooper"
+    ],
+    "runtime": "1.00s",
+    "lastFail": "2025-06-14",
+    "failCount": 0,
+    "runCount": 1,
+    "last_run": {
+      "result": "pass",
+      "date": "2025-06-14 8:06am"
+    },
+    "code": "ospf/dead_timer.py",
+    "steps": [
+      "Step 1: Setup environment",
+      "Step 2: Execute core configuration",
+      "Step 3: Run test traffic",
+      "Step 4: Collect and verify output",
+      "Step 5: Log results"
+    ]
+  },
+  {
+    "id": "6.0.0.4",
+    "name": "ospfMetricChange",
+    "category": "OSPF",
+    "description": "Validate OSPF metric update behavior",
+    "created": "2025-06-14",
+    "modified": "2025-06-14",
+    "authors": [
+      "Ernest Cooper"
+    ],
+    "runtime": "1.00s",
+    "lastFail": "2025-06-14",
+    "failCount": 0,
+    "runCount": 1,
+    "last_run": {
+      "result": "pass",
+      "date": "2025-06-14 8:06am"
+    },
+    "code": "ospf/metric_change.py",
+    "steps": [
+      "Step 1: Setup environment",
+      "Step 2: Execute core configuration",
+      "Step 3: Run test traffic",
+      "Step 4: Collect and verify output",
+      "Step 5: Log results"
+    ]
+  },
+  {
+    "id": "8.0.0.1",
+    "name": "bgpSession",
+    "category": "BGP",
+    "description": "Verify BGP session establishment",
+    "created": "2025-06-14",
+    "modified": "2025-06-14",
+    "authors": [
+      "Ernest Cooper"
+    ],
+    "runtime": "1.00s",
+    "lastFail": "2025-06-14",
+    "failCount": 0,
+    "runCount": 1,
+    "last_run": {
+      "result": "pass",
+      "date": "2025-06-14 8:06am"
+    },
+    "code": "bgp/session_establish.py",
+    "steps": [
+      "Step 1: Setup environment",
+      "Step 2: Execute core configuration",
+      "Step 3: Run test traffic",
+      "Step 4: Collect and verify output",
+      "Step 5: Log results"
+    ]
+  },
+  {
+    "id": "8.0.0.2",
+    "name": "bgpRouteAdvertise",
+    "category": "BGP",
+    "description": "Check route advertisement over BGP",
+    "created": "2025-06-14",
+    "modified": "2025-06-14",
+    "authors": [
+      "Ernest Cooper"
+    ],
+    "runtime": "1.00s",
+    "lastFail": "2025-06-14",
+    "failCount": 0,
+    "runCount": 1,
+    "last_run": {
+      "result": "pass",
+      "date": "2025-06-14 8:06am"
+    },
+    "code": "bgp/advertise.py",
+    "steps": [
+      "Step 1: Setup environment",
+      "Step 2: Execute core configuration",
+      "Step 3: Run test traffic",
+      "Step 4: Collect and verify output",
+      "Step 5: Log results"
+    ]
+  },
+  {
+    "id": "8.0.0.3",
+    "name": "bgpAsPath",
+    "category": "BGP",
+    "description": "Validate AS path prepending",
+    "created": "2025-06-14",
+    "modified": "2025-06-14",
+    "authors": [
+      "Ernest Cooper"
+    ],
+    "runtime": "1.00s",
+    "lastFail": "2025-06-14",
+    "failCount": 0,
+    "runCount": 1,
+    "last_run": {
+      "result": "pass",
+      "date": "2025-06-14 8:06am"
+    },
+    "code": "bgp/as_path.py",
+    "steps": [
+      "Step 1: Setup environment",
+      "Step 2: Execute core configuration",
+      "Step 3: Run test traffic",
+      "Step 4: Collect and verify output",
+      "Step 5: Log results"
+    ]
+  },
+  {
+    "id": "8.0.0.4",
+    "name": "bgpFailover",
+    "category": "BGP",
+    "description": "Verify BGP failover and reconvergence",
+    "created": "2025-06-14",
+    "modified": "2025-06-14",
+    "authors": [
+      "Ernest Cooper"
+    ],
+    "runtime": "1.00s",
+    "lastFail": "2025-06-14",
+    "failCount": 0,
+    "runCount": 1,
+    "last_run": {
+      "result": "pass",
+      "date": "2025-06-14 8:06am"
+    },
+    "code": "bgp/failover.py",
+    "steps": [
+      "Step 1: Setup environment",
+      "Step 2: Execute core configuration",
+      "Step 3: Run test traffic",
+      "Step 4: Collect and verify output",
+      "Step 5: Log results"
+    ]
+  }
+]

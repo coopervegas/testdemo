@@ -1,0 +1,210 @@
+[
+  {
+    "id": "2.0.0.0",
+    "name": "STP Group",
+    "category": "STP",
+    "description": "Summary for STP tests",
+    "expected": "",
+    "created": "2024-06-14",
+    "modified": "2025-06-14",
+    "authors": [
+      "Ernest Cooper"
+    ],
+    "runtime": "0.00s",
+    "lastFail": "2025-06-14",
+    "failCount": 0,
+    "runCount": 0,
+    "last_run": {
+      "result": "",
+      "date": "2025-06-14 8:06am"
+    }
+  },
+  {
+    "id": "3.0.0.0",
+    "name": "VLANs Group",
+    "category": "VLANs",
+    "description": "Summary for VLANs tests",
+    "expected": "",
+    "created": "2024-06-14",
+    "modified": "2025-06-14",
+    "authors": [
+      "Ernest Cooper"
+    ],
+    "runtime": "0.00s",
+    "lastFail": "2025-06-14",
+    "failCount": 0,
+    "runCount": 0,
+    "last_run": {
+      "result": "",
+      "date": "2025-06-14 8:06am"
+    }
+  },
+  {
+    "id": "4.0.0.0",
+    "name": "IP Group",
+    "category": "IP",
+    "description": "Summary for IP tests",
+    "expected": "",
+    "created": "2024-06-14",
+    "modified": "2025-06-14",
+    "authors": [
+      "Ernest Cooper"
+    ],
+    "runtime": "0.00s",
+    "lastFail": "2025-06-14",
+    "failCount": 0,
+    "runCount": 0,
+    "last_run": {
+      "result": "",
+      "date": "2025-06-14 8:06am"
+    }
+  },
+  {
+    "id": "6.0.0.0",
+    "name": "OSPF Group",
+    "category": "OSPF",
+    "description": "Summary for OSPF tests",
+    "expected": "",
+    "created": "2024-06-14",
+    "modified": "2025-06-14",
+    "authors": [
+      "Ernest Cooper"
+    ],
+    "runtime": "0.00s",
+    "lastFail": "2025-06-14",
+    "failCount": 0,
+    "runCount": 0,
+    "last_run": {
+      "result": "",
+      "date": "2025-06-14 8:06am"
+    }
+  },
+  {
+    "id": "8.0.0.0",
+    "name": "BGP Group",
+    "category": "BGP",
+    "description": "Summary for BGP tests",
+    "expected": "",
+    "created": "2024-06-14",
+    "modified": "2025-06-14",
+    "authors": [
+      "Ernest Cooper"
+    ],
+    "runtime": "0.00s",
+    "lastFail": "2025-06-14",
+    "failCount": 0,
+    "runCount": 0,
+    "last_run": {
+      "result": "",
+      "date": "2025-06-14 8:06am"
+    }
+  },
+  {
+    "id": "2.0.0.9",
+    "name": "rootElection",
+    "category": "STP",
+    "description": "Root bridge election test",
+    "created": "2025-06-14",
+    "modified": "2025-06-14",
+    "authors": [
+      "Ernest Cooper"
+    ],
+    "runtime": "0.75s",
+    "lastFail": "2025-06-01",
+    "failCount": 0,
+    "runCount": 3,
+    "last_run": {
+      "result": "pass",
+      "date": "2025-06-14 8:06am"
+    },
+    "code": "stp/root_election.py",
+    "steps": [
+      "Step 1: Connect three switches in a triangle topology",
+      "Step 2: Set bridge priority on one switch lower than others",
+      "Step 3: Reboot all switches",
+      "Step 4: Run STP and check which switch becomes root bridge",
+      "Step 5: Confirm STP topology using 'show spanning-tree'"
+    ]
+  },
+  {
+    "id": "2.0.0.10",
+    "name": "blockingPort",
+    "category": "STP",
+    "description": "Redundant link blocking test",
+    "created": "2025-06-14",
+    "modified": "2025-06-14",
+    "authors": [
+      "Ernest Cooper"
+    ],
+    "runtime": "0.88s",
+    "lastFail": "2025-06-02",
+    "failCount": 1,
+    "runCount": 4,
+    "last_run": {
+      "result": "pass",
+      "date": "2025-06-14 8:06am"
+    },
+    "code": "stp/blocking_port.py",
+    "steps": [
+      "Step 1: Create a looped topology with two switches and two links",
+      "Step 2: Enable STP on both devices",
+      "Step 3: Observe interface states using 'show spanning-tree interface'",
+      "Step 4: Verify one of the redundant links is in blocking state",
+      "Step 5: Remove one link and confirm port transitions to forwarding"
+    ]
+  },
+  {
+    "id": "2.0.0.11",
+    "name": "bpduGuard",
+    "category": "STP",
+    "description": "BPDU guard port shutdown test",
+    "created": "2025-06-14",
+    "modified": "2025-06-14",
+    "authors": [
+      "Ernest Cooper"
+    ],
+    "runtime": "1.02s",
+    "lastFail": "2025-06-07",
+    "failCount": 2,
+    "runCount": 5,
+    "last_run": {
+      "result": "fail",
+      "date": "2025-06-14 8:06am"
+    },
+    "code": "stp/bpdu_guard.py",
+    "steps": [
+      "Step 1: Enable BPDU guard on an edge port",
+      "Step 2: Connect another switch that sends BPDUs",
+      "Step 3: Observe the port shut down automatically",
+      "Step 4: Use 'show errdisable recovery' to confirm state",
+      "Step 5: Manually re-enable port and clear error"
+    ]
+  },
+  {
+    "id": "2.0.0.12",
+    "name": "rapidConverge",
+    "category": "STP",
+    "description": "Rapid STP failover test",
+    "created": "2025-06-14",
+    "modified": "2025-06-14",
+    "authors": [
+      "Ernest Cooper"
+    ],
+    "runtime": "0.93s",
+    "lastFail": "2025-06-12",
+    "failCount": 1,
+    "runCount": 3,
+    "last_run": {
+      "result": "pass",
+      "date": "2025-06-14 8:06am"
+    },
+    "code": "stp/rapid_converge.py",
+    "steps": [
+      "Step 1: Enable Rapid-PVST+ on all switches",
+      "Step 2: Disconnect one active uplink to simulate failure",
+      "Step 3: Start timer immediately",
+      "Step 4: Monitor alternate port transitioning to forwarding",
+      "Step 5: Record total convergence time"
+    ]
+  }
+]
