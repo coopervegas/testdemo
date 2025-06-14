@@ -1,11 +1,11 @@
 {
   "files": {
-    "main.js": "/testdemo/static/js/main.81f350dc.js",
+    "main.js": "/testdemo/static/js/main.c3fadf4f.js",
     "static/media/keysight-logo.svg": "/testdemo/static/media/keysight-logo.7e9ba2bb6ff7b4abda152679b9dbffe3.svg",
     "index.html": "/testdemo/index.html",
-    "main.81f350dc.js.map": "/testdemo/static/js/main.81f350dc.js.map"
+    "main.c3fadf4f.js.map": "/testdemo/static/js/main.c3fadf4f.js.map"
   },
   "entrypoints": [
-    "static/js/main.81f350dc.js"
+    "static/js/main.c3fadf4f.js"
   ]
 }
